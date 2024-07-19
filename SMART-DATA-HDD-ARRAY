@@ -1,0 +1,71 @@
+#!/bin/bash
+
+#########################################################
+#      This script was written by MacDaddyBighorn       #
+# This script will pull all of the server drives and    #
+# dump the SMART data into a .txt file with the date,   #
+# Model, and Serial Number as the document file name    #
+# and the SMART data inside.                            #
+#########################################################
+
+# Build up map for 26 drives (a through z)
+char_index=({a..z})
+declare -A num_map
+for((i=0; i < ${#char_index[*]}; ++i)); do
+    num_map[${char_index[i]}]=$i
+done
+
+# Execute SMART data collection for first 26 drives (/dev/sda through /dev/sdz)
+for((i=0; i < ${#char_index[*]}; ++i)); do
+  if [ -b "/dev/sd${char_index[i]}" ]; then
+    device_path="/dev/sd${char_index[i]}"
+    serial=$(smartctl -a "$device_path" | sed -n -e 's/^.*[Ss]erial [Nn]umber://p' | sed -e 's/^[ \t]*//')
+    model=$(fdisk -l "$device_path" | sed -n -e 's/^.*Disk [Mm]odel: //p')
+    vendor=$(smartctl -a "$device_path" | sed -n -e 's/^.*Vendor://p' | sed -e 's/^[ \t]*//')
+    smartctl -a "$device_path" > `date +%Y-%m-%d`" $model - $serial.txt"
+    echo "Dumping $device_path"
+  fi
+done
+
+# Execute SMART data collection for 26 more drives (/dev/sdaa through /dev/sdaz), I'm a bit jealous
+for((i=0; i < ${#char_index[*]}; ++i)); do
+  if [ -b "/dev/sda${char_index[i]}" ]; then
+    device_path="/dev/sda${char_index[i]}"
+    serial=$(smartctl -a "$device_path" | sed -n -e 's/^.*[Ss]erial [Nn]umber://p' | sed -e 's/^[ \t]*//')
+    model=$(fdisk -l "$device_path" | sed -n -e 's/^.*Disk [Mm]odel: //p')
+    smartctl -a "$device_path" > `date +%Y-%m-%d`" $model - $serial.txt"
+    echo "Dumping $device_path"
+  fi
+done
+
+# Execute SMART data collection for 26 more drives (/dev/sdba through /dev/sdbz), OK now you're just showing off...
+for((i=0; i < ${#char_index[*]}; ++i)); do
+  if [ -b "/dev/sdb${char_index[i]}" ]; then
+    device_path="/dev/sdb${char_index[i]}"
+    serial=$(smartctl -a "$device_path" | sed -n -e 's/^.*[Ss]erial [Nn]umber://p' | sed -e 's/^[ \t]*//')
+    model=$(fdisk -l "$device_path" | sed -n -e 's/^.*Disk [Mm]odel: //p')
+    smartctl -a "$device_path" > `date +%Y-%m-%d`" $model - $serial.txt"
+    echo "Dumping $device_path"
+  fi
+done
+
+echo "Finshed with /dev/sdX Drives"
+
+# Execute SMART data collection for NVME drives (/dev/nvme0 through /dev/nvme100)
+for((j=0; j < 10; ++j)); do
+  for((i=1; i < 10; ++i)); do
+    if [ -b "/dev/nvme$j""n""$i" ]; then
+      device_path="/dev/nvme$j""n""$i"
+      serial=$(smartctl -a "$device_path" | sed -n -e 's/^.*[Ss]erial [Nn]umber://p' | sed -e 's/[ \t]*//')
+      model=$(fdisk -l "$device_path" | sed -n -e 's/^.*Disk [Mm]odel: //p' | sed -e 's/[ \t]*$//')
+      smartctl -a "$device_path" > `date +%Y-%m-%d`" $model - $serial.txt"
+      echo "Dumping $device_path"
+    fi
+  done
+done
+
+echo "Finished with NVME Drives"
+
+echo "Complete!"
+
+exit
