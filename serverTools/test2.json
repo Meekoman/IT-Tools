@@ -1,0 +1,2823 @@
+{
+    "inventory": {
+        "chassis": [
+            {
+                "health_status": "WARNING",
+                "id": "1",
+                "indicator_led": "Off",
+                "manager_ids": [
+                    "1"
+                ],
+                "manufacturer": "HPE",
+                "model": "ProLiant DL380 Gen10",
+                "name": "Computer System Chassis",
+                "operation_status": "Starting",
+                "serial": "2M284604MV",
+                "sku": "868704-B21",
+                "system_ids": [
+                    "1"
+                ],
+                "type": "RackMount"
+            }
+        ],
+        "fan": [
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "0",
+                "location": "System",
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "Fan 1",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 11,
+                "reading_unit": "Percent",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "1",
+                "location": "System",
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "Fan 2",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 11,
+                "reading_unit": "Percent",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "2",
+                "location": "System",
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "Fan 3",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 12,
+                "reading_unit": "Percent",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "3",
+                "location": "System",
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "Fan 4",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 16,
+                "reading_unit": "Percent",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "4",
+                "location": "System",
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "Fan 5",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 20,
+                "reading_unit": "Percent",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "5",
+                "location": "System",
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "Fan 6",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 20,
+                "reading_unit": "Percent",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            }
+        ],
+        "firmware": [
+            {
+                "health_status": "OK",
+                "id": "1",
+                "location": "System Board",
+                "name": "iLO 5",
+                "operation_status": "Enabled",
+                "updateable": true,
+                "version": "3.03 Mar 22 2024"
+            },
+            {
+                "health_status": "OK",
+                "id": "2",
+                "location": "System Board",
+                "name": "System ROM",
+                "operation_status": "Enabled",
+                "updateable": true,
+                "version": "U30 v3.10 (02/22/2024)"
+            },
+            {
+                "health_status": null,
+                "id": "3",
+                "location": "System Board",
+                "name": "Intelligent Platform Abstraction Data",
+                "operation_status": null,
+                "updateable": true,
+                "version": "16.5.0 Build 53"
+            },
+            {
+                "health_status": "OK",
+                "id": "4",
+                "location": "System Board",
+                "name": "System Programmable Logic Device",
+                "operation_status": "Enabled",
+                "updateable": true,
+                "version": "0x2A"
+            },
+            {
+                "health_status": null,
+                "id": "5",
+                "location": "System Board",
+                "name": "Power Management Controller Firmware",
+                "operation_status": null,
+                "updateable": true,
+                "version": "1.1.4"
+            },
+            {
+                "health_status": null,
+                "id": "6",
+                "location": "Bay 1",
+                "name": "Power Supply Firmware",
+                "operation_status": null,
+                "updateable": true,
+                "version": "1.00"
+            },
+            {
+                "health_status": null,
+                "id": "7",
+                "location": "Bay 2",
+                "name": "Power Supply Firmware",
+                "operation_status": null,
+                "updateable": true,
+                "version": "1.00"
+            },
+            {
+                "health_status": "OK",
+                "id": "8",
+                "location": "System Board",
+                "name": "Innovation Engine (IE) Firmware",
+                "operation_status": "Enabled",
+                "updateable": true,
+                "version": "0.2.3.0"
+            },
+            {
+                "health_status": "OK",
+                "id": "9",
+                "location": "System Board",
+                "name": "Server Platform Services (SPS) Firmware",
+                "operation_status": "Enabled",
+                "updateable": true,
+                "version": "4.1.5.2"
+            },
+            {
+                "health_status": null,
+                "id": "10",
+                "location": "System Board",
+                "name": "Server Platform Services (SPS) Descriptor",
+                "operation_status": null,
+                "updateable": true,
+                "version": "1.2 0"
+            },
+            {
+                "health_status": null,
+                "id": "11",
+                "location": "System Board",
+                "name": "Redundant System ROM",
+                "operation_status": null,
+                "updateable": true,
+                "version": "U30 v2.68 (07/14/2022)"
+            },
+            {
+                "health_status": null,
+                "id": "12",
+                "location": "System Board",
+                "name": "Power Management Controller FW Bootloader",
+                "operation_status": null,
+                "updateable": true,
+                "version": "1.1"
+            },
+            {
+                "health_status": null,
+                "id": "13",
+                "location": "Embedded Device",
+                "name": "HPE Smart Storage Energy Pack 1 Firmware",
+                "operation_status": null,
+                "updateable": false,
+                "version": "2.1"
+            },
+            {
+                "health_status": null,
+                "id": "14",
+                "location": "Embedded LOM",
+                "name": "HPE Ethernet 1Gb 4-port 331i Adapter - NIC",
+                "operation_status": null,
+                "updateable": false,
+                "version": "20.22.41"
+            },
+            {
+                "health_status": null,
+                "id": "15",
+                "location": "Embedded RAID",
+                "name": "HPE Smart Array P408i-a SR Gen10",
+                "operation_status": null,
+                "updateable": false,
+                "version": "3.00"
+            },
+            {
+                "health_status": null,
+                "id": "16",
+                "location": "Embedded Device",
+                "name": "Embedded Video Controller",
+                "operation_status": null,
+                "updateable": false,
+                "version": "2.5"
+            },
+            {
+                "health_status": null,
+                "id": "17",
+                "location": "PCI-E Slot 3",
+                "name": "Storage Controller",
+                "operation_status": null,
+                "updateable": false,
+                "version": "N/A"
+            },
+            {
+                "health_status": null,
+                "id": "18",
+                "location": "PCI-E Slot 3",
+                "name": "Storage Controller",
+                "operation_status": null,
+                "updateable": false,
+                "version": "N/A"
+            },
+            {
+                "health_status": null,
+                "id": "19",
+                "location": "Port=1I:Box=1:Bay=23",
+                "name": "Drive",
+                "operation_status": null,
+                "updateable": false,
+                "version": "HPG0"
+            },
+            {
+                "health_status": null,
+                "id": "20",
+                "location": "Port=1I:Box=1:Bay=24",
+                "name": "Drive",
+                "operation_status": null,
+                "updateable": false,
+                "version": "HPD4"
+            },
+            {
+                "health_status": null,
+                "id": "21",
+                "location": "Embedded controller Port 1I Box 1",
+                "name": "Drive Enclosure",
+                "operation_status": null,
+                "updateable": true,
+                "version": "5.14"
+            }
+        ],
+        "logical_drive": [],
+        "manager": [
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "firmware": "3.03",
+                "health_status": "OK",
+                "id": "1",
+                "licenses": [
+                    "iLO Advanced (XXXXX-XXXXX-XXXXX-XXXXX-3HG8B)"
+                ],
+                "model": "iLO 5",
+                "name": "Manager",
+                "operation_status": "Enabled",
+                "system_ids": [
+                    "1"
+                ],
+                "type": "BMC"
+            }
+        ],
+        "memory": [
+            {
+                "base_type": "RDIMM",
+                "channel": 6,
+                "health_status": "OK",
+                "id": "proc1dimm1",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 1",
+                "operation_status": "GoodInUse",
+                "part_number": "9ASF51272PZ-2G3B1",
+                "serial": "180927C8",
+                "size_in_mb": 4096,
+                "slot": 1,
+                "socket": 1,
+                "speed": 2133,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DDR4"
+            },
+            {
+                "base_type": null,
+                "channel": 6,
+                "health_status": "OK",
+                "id": "proc1dimm2",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 2",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 2,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 5,
+                "health_status": "OK",
+                "id": "proc1dimm3",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 3",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 3,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 5,
+                "health_status": "OK",
+                "id": "proc1dimm4",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 4",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 4,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 4,
+                "health_status": "OK",
+                "id": "proc1dimm5",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 5",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 5,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 4,
+                "health_status": "OK",
+                "id": "proc1dimm6",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 6",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 6,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 1,
+                "health_status": "OK",
+                "id": "proc1dimm7",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 7",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 7,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 1,
+                "health_status": "OK",
+                "id": "proc1dimm8",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 8",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 8,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 2,
+                "health_status": "OK",
+                "id": "proc1dimm9",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 9",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 9,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 2,
+                "health_status": "OK",
+                "id": "proc1dimm10",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 10",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 10,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 3,
+                "health_status": "OK",
+                "id": "proc1dimm11",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 11",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 11,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 3,
+                "health_status": "OK",
+                "id": "proc1dimm12",
+                "manufacturer": null,
+                "name": "PROC 1 DIMM 12",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 12,
+                "socket": 1,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": "RDIMM",
+                "channel": 6,
+                "health_status": "OK",
+                "id": "proc2dimm1",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 1",
+                "operation_status": "GoodInUse",
+                "part_number": "9ASF51272PZ-2G3B1",
+                "serial": "180917EA",
+                "size_in_mb": 4096,
+                "slot": 1,
+                "socket": 2,
+                "speed": 2133,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DDR4"
+            },
+            {
+                "base_type": null,
+                "channel": 6,
+                "health_status": "OK",
+                "id": "proc2dimm2",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 2",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 2,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 5,
+                "health_status": "OK",
+                "id": "proc2dimm3",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 3",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 3,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 5,
+                "health_status": "OK",
+                "id": "proc2dimm4",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 4",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 4,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 4,
+                "health_status": "OK",
+                "id": "proc2dimm5",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 5",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 5,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 4,
+                "health_status": "OK",
+                "id": "proc2dimm6",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 6",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 6,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 1,
+                "health_status": "OK",
+                "id": "proc2dimm7",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 7",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 7,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 1,
+                "health_status": "OK",
+                "id": "proc2dimm8",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 8",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 8,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 2,
+                "health_status": "OK",
+                "id": "proc2dimm9",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 9",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 9,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 2,
+                "health_status": "OK",
+                "id": "proc2dimm10",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 10",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 10,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 3,
+                "health_status": "OK",
+                "id": "proc2dimm11",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 11",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 11,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            },
+            {
+                "base_type": null,
+                "channel": 3,
+                "health_status": "OK",
+                "id": "proc2dimm12",
+                "manufacturer": null,
+                "name": "PROC 2 DIMM 12",
+                "operation_status": "NotPresent",
+                "part_number": "NOT AVAILABLE",
+                "serial": "NOT AVAILABLE",
+                "size_in_mb": 0,
+                "slot": 12,
+                "socket": 2,
+                "speed": null,
+                "system_ids": [
+                    "1"
+                ],
+                "type": "DRAM"
+            }
+        ],
+        "network_adapter": [
+            {
+                "chassis_ids": [],
+                "firmware": "20.22.41",
+                "health_status": null,
+                "id": "1",
+                "manager_ids": [],
+                "manufacturer": null,
+                "model": null,
+                "name": "HPE Ethernet 1Gb 4-port 331i Adapter - NIC",
+                "num_ports": 4,
+                "operation_status": null,
+                "part_number": null,
+                "port_ids": [
+                    "1.1",
+                    "1.2",
+                    "1.3",
+                    "1.4"
+                ],
+                "serial": "N/A",
+                "system_ids": [
+                    "1"
+                ]
+            }
+        ],
+        "network_port": [
+            {
+                "adapter_id": "1",
+                "addresses": [
+                    "54:80:28:4E:8F:4A"
+                ],
+                "autoneg": null,
+                "capable_speed": null,
+                "chassis_ids": [],
+                "current_speed": 0,
+                "full_duplex": false,
+                "health_status": null,
+                "hostname": null,
+                "id": "1.1",
+                "ipv4_addresses": [],
+                "ipv6_addresses": [],
+                "link_status": null,
+                "link_type": null,
+                "manager_ids": [],
+                "name": null,
+                "operation_status": null,
+                "os_name": null,
+                "port_name": "1",
+                "system_ids": [
+                    "1"
+                ],
+                "vlan_enabled": null,
+                "vlan_id": null
+            },
+            {
+                "adapter_id": "1",
+                "addresses": [
+                    "54:80:28:4E:8F:4B"
+                ],
+                "autoneg": null,
+                "capable_speed": null,
+                "chassis_ids": [],
+                "current_speed": 0,
+                "full_duplex": false,
+                "health_status": null,
+                "hostname": null,
+                "id": "1.2",
+                "ipv4_addresses": [],
+                "ipv6_addresses": [],
+                "link_status": null,
+                "link_type": null,
+                "manager_ids": [],
+                "name": null,
+                "operation_status": null,
+                "os_name": null,
+                "port_name": "2",
+                "system_ids": [
+                    "1"
+                ],
+                "vlan_enabled": null,
+                "vlan_id": null
+            },
+            {
+                "adapter_id": "1",
+                "addresses": [
+                    "54:80:28:4E:8F:4C"
+                ],
+                "autoneg": null,
+                "capable_speed": null,
+                "chassis_ids": [],
+                "current_speed": 0,
+                "full_duplex": false,
+                "health_status": null,
+                "hostname": null,
+                "id": "1.3",
+                "ipv4_addresses": [],
+                "ipv6_addresses": [],
+                "link_status": null,
+                "link_type": null,
+                "manager_ids": [],
+                "name": null,
+                "operation_status": null,
+                "os_name": null,
+                "port_name": "3",
+                "system_ids": [
+                    "1"
+                ],
+                "vlan_enabled": null,
+                "vlan_id": null
+            },
+            {
+                "adapter_id": "1",
+                "addresses": [
+                    "54:80:28:4E:8F:4D"
+                ],
+                "autoneg": null,
+                "capable_speed": null,
+                "chassis_ids": [],
+                "current_speed": 0,
+                "full_duplex": false,
+                "health_status": null,
+                "hostname": null,
+                "id": "1.4",
+                "ipv4_addresses": [],
+                "ipv6_addresses": [],
+                "link_status": null,
+                "link_type": null,
+                "manager_ids": [],
+                "name": null,
+                "operation_status": null,
+                "os_name": null,
+                "port_name": "4",
+                "system_ids": [
+                    "1"
+                ],
+                "vlan_enabled": null,
+                "vlan_id": null
+            },
+            {
+                "adapter_id": null,
+                "addresses": [
+                    "54:80:28:4E:8F:48"
+                ],
+                "autoneg": true,
+                "capable_speed": null,
+                "chassis_ids": [
+                    "1"
+                ],
+                "current_speed": 1000,
+                "full_duplex": true,
+                "health_status": "OK",
+                "hostname": "ILO2M284604MV",
+                "id": "1:1:bcb4a657f5fca044372e7e301ddbac5ecc15aa56",
+                "ipv4_addresses": [
+                    "10.0.2.50/24"
+                ],
+                "ipv6_addresses": [
+                    "fe80::5680:28ff:fe4e:8f48/64"
+                ],
+                "link_status": "Up",
+                "link_type": "Ethernet",
+                "manager_ids": [
+                    "1"
+                ],
+                "name": "Manager Dedicated Network Interface",
+                "operation_status": "Enabled",
+                "os_name": null,
+                "port_name": null,
+                "system_ids": [
+                    "1"
+                ],
+                "vlan_enabled": false,
+                "vlan_id": null
+            },
+            {
+                "adapter_id": null,
+                "addresses": [
+                    "54:80:28:4E:8F:49"
+                ],
+                "autoneg": null,
+                "capable_speed": null,
+                "chassis_ids": [
+                    "1"
+                ],
+                "current_speed": null,
+                "full_duplex": false,
+                "health_status": null,
+                "hostname": "ILO2M284604MV",
+                "id": "1:2:422abb2eb53e0b8d96150c665b2380b1db40b645",
+                "ipv4_addresses": [],
+                "ipv6_addresses": [],
+                "link_status": null,
+                "link_type": "Ethernet",
+                "manager_ids": [
+                    "1"
+                ],
+                "name": "Manager Shared Network Interface",
+                "operation_status": "Disabled",
+                "os_name": null,
+                "port_name": null,
+                "system_ids": [
+                    "1"
+                ],
+                "vlan_enabled": false,
+                "vlan_id": null
+            },
+            {
+                "adapter_id": null,
+                "addresses": [
+                    "0A:CA:FE:F0:0D:04"
+                ],
+                "autoneg": null,
+                "capable_speed": null,
+                "chassis_ids": [
+                    "1"
+                ],
+                "current_speed": null,
+                "full_duplex": null,
+                "health_status": null,
+                "hostname": null,
+                "id": "1:3:d5b9e6c09a0e5b8df588cdc3a969178bace054cf",
+                "ipv4_addresses": [],
+                "ipv6_addresses": [],
+                "link_status": null,
+                "link_type": "Ethernet",
+                "manager_ids": [
+                    "1"
+                ],
+                "name": "Manager Virtual Network Interface",
+                "operation_status": "Disabled",
+                "os_name": null,
+                "port_name": null,
+                "system_ids": [
+                    "1"
+                ],
+                "vlan_enabled": null,
+                "vlan_id": null
+            }
+        ],
+        "physical_drive": [
+            {
+                "bay": "23",
+                "encrypted": false,
+                "failure_predicted": null,
+                "firmware": "HPG0",
+                "health_status": "OK",
+                "id": "0:30",
+                "interface_speed": 6000,
+                "interface_type": "SATA",
+                "location": "1I:1:23",
+                "logical_drive_ids": [],
+                "manufacturer": null,
+                "model": "MK001920GWCFB",
+                "name": "HpeSmartStorageDiskDrive",
+                "operation_status": "Enabled",
+                "part_number": null,
+                "power_on_hours": 45216,
+                "predicted_media_life_left_percent": 100,
+                "serial": "S3BPNX0JA02161",
+                "size_in_byte": 1920383410176,
+                "speed_in_rpm": null,
+                "storage_controller_ids": [
+                    "0"
+                ],
+                "storage_enclosure_ids": [
+                    "0:0"
+                ],
+                "storage_port": "1I",
+                "system_ids": [
+                    "1"
+                ],
+                "temperature": 13,
+                "type": "SSD"
+            },
+            {
+                "bay": "24",
+                "encrypted": false,
+                "failure_predicted": null,
+                "firmware": "HPD4",
+                "health_status": "OK",
+                "id": "0:31",
+                "interface_speed": 6000,
+                "interface_type": "SAS",
+                "location": "1I:1:24",
+                "logical_drive_ids": [],
+                "manufacturer": null,
+                "model": "EH0146FCBVB",
+                "name": "HpeSmartStorageDiskDrive",
+                "operation_status": "Enabled",
+                "part_number": null,
+                "power_on_hours": null,
+                "predicted_media_life_left_percent": null,
+                "serial": "35F0A02DFRQ11511",
+                "size_in_byte": 146815737856,
+                "speed_in_rpm": 15000,
+                "storage_controller_ids": [
+                    "0"
+                ],
+                "storage_enclosure_ids": [
+                    "0:0"
+                ],
+                "storage_port": "1I",
+                "system_ids": [
+                    "1"
+                ],
+                "temperature": 25,
+                "type": "HDD"
+            }
+        ],
+        "power_control": [],
+        "power_supply": [
+            {
+                "bay": "1",
+                "capacity_in_watt": 500,
+                "chassis_ids": [
+                    "1"
+                ],
+                "efficiency_percent": null,
+                "firmware": "1.00",
+                "health_status": "OK",
+                "id": "0",
+                "input_voltage": 209,
+                "last_power_output": 58,
+                "model": "720478-B21",
+                "name": "HpeServerPowerSupply",
+                "operation_status": "Enabled",
+                "part_number": "754377-001",
+                "serial": "5DMWA0CLL361YE",
+                "type": "AC",
+                "vendor": "LTEON"
+            },
+            {
+                "bay": "2",
+                "capacity_in_watt": 500,
+                "chassis_ids": [
+                    "1"
+                ],
+                "efficiency_percent": null,
+                "firmware": "1.00",
+                "health_status": "OK",
+                "id": "1",
+                "input_voltage": 209,
+                "last_power_output": 68,
+                "model": "720478-B21",
+                "name": "HpeServerPowerSupply",
+                "operation_status": "Enabled",
+                "part_number": "754377-001",
+                "serial": "5DMWA0CLL361U4",
+                "type": "AC",
+                "vendor": "LTEON"
+            }
+        ],
+        "processor": [
+            {
+                "L1_cache_kib": 375,
+                "L2_cache_kib": 6000,
+                "L3_cache_kib": 8250,
+                "architecture": "x86",
+                "cores": 6,
+                "current_speed": 1700,
+                "health_status": "OK",
+                "id": "Processors.1",
+                "instruction_set": "x86-64",
+                "manufacturer": "Intel(R) Corporation",
+                "max_speed": 4000,
+                "model": "Intel(R) Xeon(R) Bronze 3104 CPU @ 1.70GHz",
+                "name": "Processors",
+                "operation_status": "Enabled",
+                "serial": null,
+                "socket": "Proc 1",
+                "system_ids": [
+                    "1"
+                ],
+                "threads": 6,
+                "type": "CPU"
+            },
+            {
+                "L1_cache_kib": 375,
+                "L2_cache_kib": 6000,
+                "L3_cache_kib": 8250,
+                "architecture": "x86",
+                "cores": 6,
+                "current_speed": 1700,
+                "health_status": "OK",
+                "id": "Processors.2",
+                "instruction_set": "x86-64",
+                "manufacturer": "Intel(R) Corporation",
+                "max_speed": 4000,
+                "model": "Intel(R) Xeon(R) Bronze 3104 CPU @ 1.70GHz",
+                "name": "Processors",
+                "operation_status": "Enabled",
+                "serial": null,
+                "socket": "Proc 2",
+                "system_ids": [
+                    "1"
+                ],
+                "threads": 6,
+                "type": "CPU"
+            }
+        ],
+        "storage_controller": [
+            {
+                "backup_power_health": null,
+                "backup_power_present": true,
+                "cache_size_in_mb": null,
+                "firmware": "3.00",
+                "health_status": "OK",
+                "id": "0",
+                "location": "Slot 0",
+                "logical_drive_ids": [],
+                "manufacturer": "HPE",
+                "model": "HPE Smart Array P408i-a SR Gen10",
+                "name": "Hpe Smart Storage Array Controller",
+                "operation_status": "Enabled",
+                "physical_drive_ids": [
+                    "0:30",
+                    "0:31"
+                ],
+                "serial": "PEYHC0ARH981LF",
+                "storage_enclosure_ids": [
+                    "0:0"
+                ],
+                "system_ids": [
+                    "1"
+                ]
+            }
+        ],
+        "storage_enclosure": [
+            {
+                "firmware": "5.14",
+                "health_status": "OK",
+                "id": "0:0",
+                "location": "1I:1",
+                "manufacturer": null,
+                "model": "12G SAS Exp Card",
+                "name": "HpeSmartStorageEnclosure",
+                "num_bays": 28,
+                "operation_status": "Enabled",
+                "physical_drive_ids": [
+                    "0:30",
+                    "0:31"
+                ],
+                "serial": "PWJKN0J52GX0TH",
+                "storage_controller_ids": [
+                    "0"
+                ],
+                "storage_port": null,
+                "system_ids": [
+                    "1"
+                ]
+            }
+        ],
+        "system": [
+            {
+                "bios_version": "U30 v3.10 (02/22/2024)",
+                "chassis_ids": [
+                    "1"
+                ],
+                "cpu_num": 2,
+                "health_status": "WARNING",
+                "host_name": "WIN-M9P385M9056",
+                "id": "1",
+                "indicator_led": "Off",
+                "manager_ids": [
+                    "1"
+                ],
+                "manufacturer": "HPE",
+                "mem_size": 8,
+                "model": "ProLiant DL380 Gen10",
+                "name": "Computer System",
+                "operation_status": "Starting",
+                "part_number": null,
+                "power_state": "On",
+                "serial": "2M284604MV",
+                "type": "Physical"
+            }
+        ],
+        "temperature": [
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "0",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "01-Inlet Ambient",
+                "operation_status": "Enabled",
+                "physical_context": "Intake",
+                "reading": 21,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 42,
+                "upper_threshold_fatal": 47,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "1",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "02-CPU 1",
+                "operation_status": "Enabled",
+                "physical_context": "CPU",
+                "reading": 40,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 70,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "2",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "03-CPU 2",
+                "operation_status": "Enabled",
+                "physical_context": "CPU",
+                "reading": 40,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 70,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "3",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "04-P1 DIMM 1-6",
+                "operation_status": "Enabled",
+                "physical_context": "Memory",
+                "reading": 27,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 90,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "4",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "05-PMM 1-6",
+                "operation_status": "Absent",
+                "physical_context": "Memory",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "5",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "06-P1 DIMM 7-12",
+                "operation_status": "Absent",
+                "physical_context": "Memory",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "6",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "07-PMM 7-12",
+                "operation_status": "Absent",
+                "physical_context": "Memory",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "7",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "08-P2 DIMM 1-6",
+                "operation_status": "Enabled",
+                "physical_context": "Memory",
+                "reading": 26,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 90,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "8",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "09-PMM 1-6",
+                "operation_status": "Absent",
+                "physical_context": "Memory",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "9",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "10-P2 DIMM 7-12",
+                "operation_status": "Absent",
+                "physical_context": "Memory",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "10",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "11-PMM 7-12",
+                "operation_status": "Absent",
+                "physical_context": "Memory",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "11",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "12-HD Max",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 35,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 60,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "12",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "13-Exp Bay Drive",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "13",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "14-Stor Batt 1",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 22,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 60,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "14",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "15-Front Ambient",
+                "operation_status": "Enabled",
+                "physical_context": "Intake",
+                "reading": 23,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 70,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "15",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "16-VR P1",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 26,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 115,
+                "upper_threshold_fatal": 120,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "16",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "17-VR P2",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 29,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 115,
+                "upper_threshold_fatal": 120,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "17",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "18-VR P1 Mem 1",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 22,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 115,
+                "upper_threshold_fatal": 120,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "18",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "19-VR P1 Mem 2",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 22,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 115,
+                "upper_threshold_fatal": 120,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "19",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "20-VR P2 Mem 1",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 23,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 115,
+                "upper_threshold_fatal": 120,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "20",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "21-VR P2 Mem 2",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 21,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 115,
+                "upper_threshold_fatal": 120,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "21",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "22-Chipset",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 37,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 100,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "22",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "23-BMC",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 63,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 110,
+                "upper_threshold_fatal": 115,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "23",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "24-BMC Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 35,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 90,
+                "upper_threshold_fatal": 95,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "24",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "25-HD Controller",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 57,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 100,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "25",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "26-HD Cntlr Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 35,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 85,
+                "upper_threshold_fatal": 90,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "26",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "28-LOM Card",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "27",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "29-LOM Card Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 29,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "28",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "30-PCI 1",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 42,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 100,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "29",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "31-PCI 1 Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 30,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "30",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "32-PCI 2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "31",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "33-PCI 2 Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 31,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "32",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "34-PCI 3",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "33",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "35-PCI 3 Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 33,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "34",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "36-PCI 4",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "35",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "37-PCI 4 Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 25,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "36",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "38-PCI 5",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "37",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "39-PCI 5 Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 27,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "38",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "40-PCI 6",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "39",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "41-PCI 6 Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 28,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "40",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "48-Mid HD Max",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "41",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "49-Rear HD 4 Max",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "42",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "50-Rear HD 5 Max",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "43",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "51-Rear HD 6 Max",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "44",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "52-Rear 3LFF Max",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "45",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "53-Battery Zone",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 31,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "46",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "54-P/S 1 Inlet",
+                "operation_status": "Enabled",
+                "physical_context": "PowerSupply",
+                "reading": 23,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "47",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "55-P/S 2 Inlet",
+                "operation_status": "Enabled",
+                "physical_context": "PowerSupply",
+                "reading": 27,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "48",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "56-P/S 1",
+                "operation_status": "Enabled",
+                "physical_context": "PowerSupply",
+                "reading": 40,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "49",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "57-P/S 2",
+                "operation_status": "Enabled",
+                "physical_context": "PowerSupply",
+                "reading": 40,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "50",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "58-P/S 2 Zone",
+                "operation_status": "Enabled",
+                "physical_context": "PowerSupply",
+                "reading": 30,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 75,
+                "upper_threshold_fatal": 80,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "51",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "59-E-Fuse",
+                "operation_status": "Enabled",
+                "physical_context": "PowerSupply",
+                "reading": 24,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 100,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "52",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "76-AHCI HD Max",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "53",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "80-PCI 1 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "54",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "81-PCI 1 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "55",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "82-PCI 2 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "56",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "83-PCI 2 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "57",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "84-PCI 3 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "58",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "85-PCI 3 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "59",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "86-PCI 4 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "60",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "87-PCI 4 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "61",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "88-PCI 5 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "62",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "89-PCI 5 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "63",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "90-PCI 6 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "64",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "91-PCI 6 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "65",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "92-PCI 7 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "66",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "93-PCI 7 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "67",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "94-PCI 8 M2",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": null,
+                "id": "68",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "95-PCI 8 M2 Zn",
+                "operation_status": "Absent",
+                "physical_context": "SystemBoard",
+                "reading": 0,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "69",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "96-CPU 1 PkgTmp",
+                "operation_status": "Enabled",
+                "physical_context": "CPU",
+                "reading": 32,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "70",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "97-CPU 2 PkgTmp",
+                "operation_status": "Enabled",
+                "physical_context": "CPU",
+                "reading": 33,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": null,
+                "upper_threshold_fatal": null,
+                "upper_threshold_non_critical": null
+            },
+            {
+                "chassis_ids": [
+                    "1"
+                ],
+                "health_status": "OK",
+                "id": "71",
+                "location": null,
+                "lower_threshold_critical": null,
+                "lower_threshold_fatal": null,
+                "lower_threshold_non_critical": null,
+                "max_reading": null,
+                "min_reading": null,
+                "name": "27.1-LOM-Communication Channel",
+                "operation_status": "Enabled",
+                "physical_context": "SystemBoard",
+                "reading": 52,
+                "reading_unit": "Celsius",
+                "upper_threshold_critical": 110,
+                "upper_threshold_fatal": 115,
+                "upper_threshold_non_critical": 100
+            }
+        ]
+    },
+    "meta": {
+        "data_retrieval_issues": {},
+        "duration_of_data_collection_in_seconds": 5.533894,
+        "host_that_collected_inventory": "scriptTest",
+        "inventory_id": null,
+        "inventory_layout_version": "2.0.0",
+        "inventory_name": null,
+        "script_version": "2.0.0",
+        "start_of_data_collection": "2025-12-15T17:50:40+00:00"
+    }
+}
