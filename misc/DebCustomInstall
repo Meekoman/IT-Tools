@@ -1,0 +1,9 @@
+apt update
+apt upgrade
+apt install nfs-common
+apt install htop
+apt install nmap
+mkdir -p /mnt/nfs/home
+mkdir -p /var/nfsshare
+sudo vi /etc/fstab
+	192.168.0.1:/var/nfsshare /var/nfsshare nfs defaults 0 0
