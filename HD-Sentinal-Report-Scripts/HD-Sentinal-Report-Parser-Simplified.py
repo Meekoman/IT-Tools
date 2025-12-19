@@ -26,6 +26,7 @@ ltw = "Lifetime Writes"
 health = "Health"
 perf = "Performance"
 sector = "sector"
+fw = "Firmware"
 firstDrive = True
 
 #Add Drive info to 'drives' list
@@ -49,6 +50,8 @@ for idx, s in enumerate(report):
  #               if firstDrive == False:
  #                   drives.append("\n\n\n\n")
             if hddID in report[idx + i]:
+                drives.append(report[idx + i])
+            if fw in report[idx + i]:
                 drives.append(report[idx + i])
             if sn in report[idx + i]:
                 drives.append(report[idx + i])

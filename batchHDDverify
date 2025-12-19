@@ -1,0 +1,25 @@
+#!/bin/bash
+#drives='lsblk -do NAME | awk '{for (i=NF; i!=0; i--) print $i }''
+count=0
+
+for drive in $(lsblk -do NAME | grep -v loop | grep -v NAME); do
+      ((count++))
+      #echo /dev/${drive}
+      #smartctl -t long /dev/${drive}
+done
+
+echo "Number of drives attached: $count"
+
+read -p "Do you want to Verify $count drives? " -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+      for drive in $(lsblk -do NAME | grep -v loop | grep -v NAME); do
+           echo ""
+           echo "Verifying /dev/${drive}"
+           smartctl -H /dev/${drive} | grep SMART
+           #smartctl -t short /dev/${drive}
+     done
+else
+     echo "Cancel"
+fi

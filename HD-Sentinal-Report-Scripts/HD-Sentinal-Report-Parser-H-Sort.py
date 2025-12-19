@@ -33,7 +33,7 @@ poh = "Power On Time"
 ltw = "Lifetime Writes"
 health = "Health"
 perf = "Performance"
-sector = "sector"
+sector = "sectors"
 firstDrive = True
 
 
@@ -69,10 +69,12 @@ dMatrix = np.split(dMatrix, split_idx, axis=0)
 drives_df = pd.DataFrame(dMatrix)
 health_df = pd.DataFrame(health_pct)
 df = pd.concat([drives_df, health_df], axis=1, join="inner")
+
 df.columns = ['Model', 'SN', 'Health', 'Sectors', 'Blank', 'Hth']
 
 df = df.sort_values('Hth')
 
+print(df)
 
 #Cleanup dataframe
 df = df.drop(['Hth'], axis=1)
