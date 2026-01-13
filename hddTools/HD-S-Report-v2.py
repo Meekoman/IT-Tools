@@ -29,6 +29,7 @@ se = ["sector", "error"]
 http = "http"
 unknown = "unknown"
 end = ["ATA Information", "Properties"]
+linux = False
 
 #List of 1 to 4, excluding 5
 array = list(range(1, 5))
@@ -137,7 +138,8 @@ with open (inputFile, encoding= "ISO-8859-1") as myfile:
     # For each line, read to a string
     for line in myfile:              
         report.append(line)
-
+        if "Linux" in line:
+            linux = True
 
 # Function to add a value to a specified column
 def add_value(df, column_name, value, index):
@@ -162,13 +164,15 @@ def add_pod_column(df):
         print(f"The column '{pod}' exists in the DataFrame.")
         return df
 
-
 #Option 5
 def refactor(option):
     driveIndex = 0
-    unused_dict = {}
     selection = []
     sortBy = health
+    if linux:
+        maxLines = 23
+    else:
+        maxLines = 28
 
     Sectors = "Sectors"
     nl = "Newline"
@@ -195,7 +199,6 @@ def refactor(option):
         if search_string in s:
             if option < 4:
                 add_value(drives, search_string, s, driveIndex)
-            maxLines = 28
             subset = selection.copy()
 
             for i in range(maxLines):
