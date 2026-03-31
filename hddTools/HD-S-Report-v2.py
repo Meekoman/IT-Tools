@@ -256,16 +256,28 @@ def refactor(option):
 
     #Sort by drive health
     if sort == True:
-        drives['Sorted'] = drives[sortBy].apply(lambda x: int(re.search(r'(\d+)', x).group()) 
-                                                if re.search(r'(\d+)', x) else float('inf'))
+        if sortBy != sn:
+            drives['Sorted'] = drives[sortBy].apply(lambda x: int(re.search(r'(\d+)', x).group()) 
+                                                    if re.search(r'(\d+)', x) else float('inf'))
+        else:
+            drives['Sorted'] = drives[sortBy].apply(lambda x: re.search(r':\s*([A-Za-z0-9]+)', x).group(1) 
+                                                    if re.search(r':\s*([A-Za-z0-9]+)', x) else "")
+
+
+        #Debugging
+        pd.set_option('display.max_rows', len(drives))
+        print(drives.sort_values(by='Sorted', ascending=True))
 
         # Sort the DataFrame by the new column, then drop the column if not needed
         if sortBy == health:
-            sorted_df = drives.sort_values(by=sortBy, ascending=False).drop(columns=['Sorted'])
+            sorted_df = drives.sort_values(by='Sorted', ascending=True).drop(columns=['Sorted'])
+        #elif sortBy == sn:
+        #    sorted_df = drives.sort_values("Hard Disk Serial Number", key=lambda col: col.map(nat_key), ascending=True)
         else:
-            sorted_df = drives.sort_values(by=sortBy, ascending=True).drop(columns=['Sorted'])
-
+            sorted_df = drives.sort_values(by='Sorted', ascending=True).drop(columns=['Sorted'])
+        
         npArray = sorted_df.to_numpy()
+        #print(sorted_df)
     else:
         if option != 4:
             npArray = dMatrix

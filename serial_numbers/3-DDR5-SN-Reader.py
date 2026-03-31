@@ -72,7 +72,7 @@ def process_image(image):
                                   norm_type=cv2.NORM_MINMAX, 
                                   dtype=cv2.CV_8U)
 
-    return normalize   
+    return dilated   
 
 
 
@@ -84,7 +84,7 @@ def read_serial_number(image):
     # Use regex to find the serial number pattern
     match = re.search(r'SN-\s*([A-Za-z0-9]+)', text)
     match = re.search(r'SN.*', text)
-    match = re.search(r'802C0F*', text)
+    #match = re.search(r'802C0F*', text)
     if match:
         serial_number = match.group(0)  # Extract the serial number
         return serial_number.strip()  # Return the cleaned serial number
@@ -103,7 +103,7 @@ def main():
 
 #         Save and inspect the captured image
 #        cv2.imwrite('captured_image.png', image)  # Save the captured image
-    image_file = 'image3.jpg'
+    image_file = 'test.png'
     img = cv2.imread(image_file)
     processed_image = process_image(img)
     cv2.imwrite('processed_image.png', processed_image)  # Save the processed image for inspection

@@ -11,16 +11,16 @@ output_dir = './'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-def capture_image(video_source=0):
+def capture_image(video_source=4):
     cap = cv2.VideoCapture(video_source)
     if not cap.isOpened():
         print("Error: Camera not accessible!")
         return None
-    
+
     # Use cv2.CAP_PROP_FRAME_WIDTH or the number 3
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
     # Use cv2.CAP_PROP_FRAME_HEIGHT or the number 4
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
     ret, frame = cap.read()
     cap.release()  # Release the camera
@@ -47,7 +47,7 @@ def sharpen_image(image):
 
 def process_image(image):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    gray = cv2.GaussianBlur(gray, (7, 7), 0)
+    gray = cv2.GaussianBlur(gray, (5, 5), 0)
 
     # Adjust contrast and brightness (tweak alpha and beta as needed)
     adjusted = adjust_contrast_brightness(gray, alpha=1.0, beta=0)
