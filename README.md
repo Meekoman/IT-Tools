@@ -1,7 +1,7 @@
 # IT-Tools
 Work Tools
 
-#### <ins>Two folders</ins>
+#### <ins>Four Folders</ins>
 
 hddTools:
 * HD-S Reports (Windows & Linux)
@@ -17,4 +17,3 @@ serial_numbers:
 
 serverTools: (soon)
 * iLO Information .json to .txt
-* 
