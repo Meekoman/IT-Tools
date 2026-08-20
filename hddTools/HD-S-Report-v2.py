@@ -164,11 +164,37 @@ def add_pod_column(df):
         print(f"The column '{pod}' exists in the DataFrame.")
         return df
 
+def dataframeCleanup(df):
+    first_colon = 1
+    for columnName in df:
+        if 'Health' in columnName or 'Performance' in columnName:
+            df[columnName] = df[columnName].str.replace(r'\D', '', regex=True)
+            df[columnName] = df[columnName].str.strip()
+        elif ":" in df.iloc[0][columnName] or ":" in df.iloc[len(df) - 1][columnName]:
+            df[columnName] = df[columnName].str.split(': ', expand=True, n=first_colon)[first_colon]
+            df[columnName] = df[columnName].str.strip()
+
+    return df
+
+
 #Option 5
 def refactor(option):
     driveIndex = 0
     selection = []
-    sortBy = health
+
+ ### Variable to change if you want to sort by a different value ###
+ # Valid values (Output dependent):
+ # - health
+ # - size
+ # - poh 
+ # - ltw
+ # - search_string
+ # - sn
+  
+    sortBy = poh
+
+### ###
+
     if linux:
         maxLines = 23
     else:
@@ -255,7 +281,7 @@ def refactor(option):
     dMatrix = np.array(drives)
 
     #Sort by drive health
-    if sort == True:
+    if sort:
         if sortBy != sn:
             drives['Sorted'] = drives[sortBy].apply(lambda x: int(re.search(r'(\d+)', x).group()) 
                                                     if re.search(r'(\d+)', x) else float('inf'))
@@ -282,6 +308,16 @@ def refactor(option):
         if option != 4:
             npArray = dMatrix
 
+
+    #Cleanup sorted_df
+    if sort:
+        sorted_df.rename(columns={'  -- Physical Disk Information':'Disk #'}, inplace=True)
+        sorted_df.rename(columns={'Hard Disk Serial Number':'Serial Number'}, inplace=True)
+        sorted_df = dataframeCleanup(sorted_df)
+        sorted_df = sorted_df.drop('Newline', axis=1)
+        sorted_df = sorted_df.drop('Disk #', axis=1)
+
+
     #Check if user entered an output file name
     if len(sys.argv) > 2:
         outputFile = sys.argv[2]
@@ -290,8 +326,12 @@ def refactor(option):
 
     if option != 4:
         #Write to output file
+        summaryFile = "Summary-" + outputFile
         with open(outputFile, 'wb'):
             npArray.tofile(outputFile, sep=' ', format='%s')
+        if sort:
+            with open(summaryFile, 'w') as f:
+                f.write(sorted_df.to_string())
     else:
         #Write to output file
         of = open(outputFile, 'w')
