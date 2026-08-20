@@ -1,0 +1,200 @@
+  -- Physical Disk Information - Disk: #0: VO0160ECHPL --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : VO0160ECHPL
+     Hard Disk Serial Number  . . . . . . . . . . . . : BTPR225300KY160DGN
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #1: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA12008
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,200.03 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #2: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11990
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,181.16 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #3: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11965
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 93 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 891 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #4: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11953
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 94 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 786.33 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #5: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA12009
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,252.61 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #6: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11983
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,208.39 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #7: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA12010
+     Health . . . . . . . . . . . . . . . . . . . . . : #################--- 88 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,365.55 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #8: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11938
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,307.67 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #9: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11993
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,244.13 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #10: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11984
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,179.94 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #11: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11937
+     Health . . . . . . . . . . . . . . . . . . . . . : #################--- 89 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,320.66 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #12: SAMSUNG MZILT800HBHQ0D3 --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : SAMSUNG MZILT800HBHQ0D3
+     Hard Disk Serial Number  . . . . . . . . . . . . : S5YMNA0RA11981
+     Health . . . . . . . . . . . . . . . . . . . . . : ##################-- 90 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 1,215.61 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #13: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I090A91W
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 416.46 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #14: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I090A925
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 416.69 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #15: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I060AN2S
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 415.11 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #16: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I090A926
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 413.06 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #17: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I060AN2W
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 530.74 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #18: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : AJABN5310I310BE1S
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 532 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #19: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I090A91X
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 524.52 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #20: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : AJABN5310I310BE1T
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 527.77 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #21: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I060AN1V
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 392.54 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #22: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I060AN1X
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 391.74 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #23: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I060AN1Z
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 390.98 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+
+   -- Physical Disk Information - Disk: #24: HFS3T8G3H2X069N --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HFS3T8G3H2X069N
+     Hard Disk Serial Number  . . . . . . . . . . . . : ADAAN4150I060AN1Y
+     Health . . . . . . . . . . . . . . . . . . . . . : ###################- 99 % (Excellent)
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 393.47 TB
+     The status of the solid state disk is PERFECT. Problematic or weak sectors were not found. 
+ 
+

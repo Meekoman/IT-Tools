@@ -191,7 +191,7 @@ def refactor(option):
  # - search_string
  # - sn
   
-    sortBy = poh
+    sortBy = health
 
 ### ###
 
@@ -330,8 +330,11 @@ def refactor(option):
         with open(outputFile, 'wb'):
             npArray.tofile(outputFile, sep=' ', format='%s')
         if sort:
+            summaryFile = "Summary-" + outputFile
             with open(summaryFile, 'w') as f:
                 f.write(sorted_df.to_string())
+                sortStatement = "\n\nSorted by: " + sortBy
+                f.write(sortStatement)
     else:
         #Write to output file
         of = open(outputFile, 'w')

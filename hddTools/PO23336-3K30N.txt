@@ -1,0 +1,208 @@
+  -- Physical Disk Information - Disk: #0: HP      8GB_EM_USB_Drive --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : HP      8GB_EM_USB_Drive
+     Firmware Revision  . . . . . . . . . . . . . . . : PMAP
+     Hard Disk Serial Number  . . . . . . . . . . . . : PMAP1234
+     Total Size . . . . . . . . . . . . . . . . . . . : 7648 MB
+     Power On Time
+     Power On Days
+     Lifetime Writes
+     Health . . . . . . . . . . . . . . . . . . . . . : ? (Unknown)
+     Performance  . . . . . . . . . . . . . . . . . . : ? (Unknown)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #1: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A189FL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2256 days, 23 hours, 34 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54167 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 34.97 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #2: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A110FL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2256 days, 23 hours, 46 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54167 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 34.73 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #3: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A16YFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 0 hours, 9 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54168 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #4: QEMU    QEMU HARDDISK --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : QEMU    QEMU HARDDISK
+     Firmware Revision  . . . . . . . . . . . . . . . : 2.5+
+     Hard Disk Serial Number  . . . . . . . . . . . . : ?
+     Total Size . . . . . . . . . . . . . . . . . . . : 491519 MB
+     Power On Time
+     Power On Days
+     Lifetime Writes
+     Health . . . . . . . . . . . . . . . . . . . . . : ? (Unknown)
+     Performance  . . . . . . . . . . . . . . . . . . : ? (Unknown)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #5: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 2860A0L0FL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 0 hours, 9 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54168 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35.41 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #6: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 2860A0J1FL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 0 hours, 11 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54168 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35.38 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #7: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A17PFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 0 hours, 39 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54168 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35.40 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #8: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A0VSFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 1 hours, 26 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54169 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35.62 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #9: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 2860A0JNFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2256 days, 21 hours, 5 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54165 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 2.51 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #10: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 2860A0JYFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2256 days, 23 hours, 52 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54167 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35.21 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #11: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A0SXFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 0 hours, 31 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54168 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 34.84 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #12: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A17NFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 0 hours, 9 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54168 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35.44 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #13: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A16QFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2256 days, 23 hours, 10 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54167 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 34.94 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #14: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 18V0A0C6FL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2256 days, 23 hours, 55 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54167 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 35.50 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
+   -- Physical Disk Information - Disk: #15: TOSHIBA AL14SEB120NY --
+     Hard Disk Model ID . . . . . . . . . . . . . . . : TOSHIBA AL14SEB120NY
+     Firmware Revision  . . . . . . . . . . . . . . . : EA05
+     Hard Disk Serial Number  . . . . . . . . . . . . : 2860A0JWFL0E
+     Total Size . . . . . . . . . . . . . . . . . . . : 1144639 MB
+     Power On Time  . . . . . . . . . . . . . . . . . : 2257 days, 0 hours, 30 minutes (estimated)
+     Power On Hours . . . . . . . . . . . . . . . . . : 54168 hours
+     Lifetime Writes  . . . . . . . . . . . . . . . . : 34.91 TB
+     Health . . . . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Performance  . . . . . . . . . . . . . . . . . . : #################### 100 % (Excellent)
+     Sectors
+ 
+
