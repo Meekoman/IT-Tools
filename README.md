@@ -1,11 +1,11 @@
 # IT-Tools
 Work Tools
 
+#### <ins>Four Folders</ins>
 #### <ins>Two folders</ins>
 
 hddTools:
-* HD-S Reports (Windows)
-* HD-S Reports (Linux)
+* HD-S Reports (Windows & Linux)
 * SMART Testing (testing and verify)
 
 misc:
@@ -13,6 +13,11 @@ misc:
 * Inventory Shelving Script
 * Laptop battery cycle value
 
+serial_numbers: 
+* Computer vision - DDR5 serial number reader
+
+serverTools: (soon)
+* iLO Information .json to .txt
 serverTools: (soon)
 * iLO Information .json to .txt
 * 

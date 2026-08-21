@@ -3,24 +3,34 @@ import re
 import numpy as np
 from operator import itemgetter
 import pandas as pd
+from itertools import chain
 
 #Report vars
-drives = []
+drives4 = []
 report = []  
 health_pct = []
+poh_sort = []
 split_idx = []
+sectorArray = []
 #Search String vars
 search_string = "  -- Physical Disk Information"
 hddID = "Hard Disk Model ID"
 sn = "Hard Disk Serial Number"
 size = "Total Size"
 poh = "Power On Time"
+pod = "Power On Days"
 ltw = "Lifetime Writes"
 health = "Health"
 perf = "Performance"
-sector = "sectors"
+sector = "sector"
 fw = "Firmware"
-firstDrive = True
+error = "error"
+se = ["sector", "error"]
+http = "http"
+unknown = "unknown"
+end = ["ATA Information", "Properties"]
+linux = False
+
 #List of 1 to 4, excluding 5
 array = list(range(1, 5))
 
@@ -114,6 +124,7 @@ def outputPicker():
             print("Invalid input. Please enter a numeric value.")
             printOptions()
     #End of while loop
+    return functionOption
 #End of outputPicker()
 
 #Check if input file name was entered
@@ -127,51 +138,185 @@ with open (inputFile, encoding= "ISO-8859-1") as myfile:
     # For each line, read to a string
     for line in myfile:              
         report.append(line)
+        if "Linux" in line:
+            linux = True
 
-#Option 1
-def healthSort(): 
+# Function to add a value to a specified column
+def add_value(df, column_name, value, index):
+    if column_name in df.columns:
+        df.loc[index, column_name] = value
+        return df
+    else:
+        print(f"Column '{column_name}' does not exist in the DataFrame.")
+
+def add_pod_column(df):
+    if pod not in df.columns:
+        # Add the new column with NaN values (or any default value)
+        df[pod] = pd.NA
+        # Find the index of the 'Poh' column
+        poh_index = df.columns.get_loc(poh)
+        # Reorder columns to place the new column at the index of 'Poh'
+        cols = list(df.columns)
+        cols.insert(poh_index + 1, cols.pop(-1))  # Move the new column to the index after 'Poh'
+        df = df[cols]  # Reindex the DataFrame with the new order
+        return df
+    else:
+        print(f"The column '{pod}' exists in the DataFrame.")
+        return df
+
+def dataframeCleanup(df):
+    first_colon = 1
+    for columnName in df:
+        if 'Health' in columnName or 'Performance' in columnName:
+            df[columnName] = df[columnName].str.replace(r'\D', '', regex=True)
+            df[columnName] = df[columnName].str.strip()
+        elif ":" in df.iloc[0][columnName] or ":" in df.iloc[len(df) - 1][columnName]:
+            df[columnName] = df[columnName].str.split(': ', expand=True, n=first_colon)[first_colon]
+            df[columnName] = df[columnName].str.strip()
+
+    return df
+
+
+#Option 5
+def refactor(option):
+    driveIndex = 0
+    selection = []
+
+ ### Variable to change if you want to sort by a different value ###
+ # Valid values (Output dependent):
+ # - health
+ # - size
+ # - poh 
+ # - ltw
+ # - fw
+ # - sn
+
+    sortBy = health
+
+### ###
+
+    if linux:
+        maxLines = 23
+    else:
+        maxLines = 28
+
+    Sectors = "Sectors"
+    nl = "Newline"
     #Build list of information containing each drive
+    if option == 1:
+        selection = [sn, health]
+        sort = True
+    elif option == 2:
+        selection = [sn, health, ltw]
+        sort = True
+    elif option == 3:
+        selection = [fw, sn, size, poh, ltw, health, perf]
+        sort = True
+    else:
+        sort = False
+
+    selection.insert(0, 'Model')
+    selection.insert(0, search_string)
+    selection.append(Sectors)
+    selection.append(nl)
+    drives = pd.DataFrame(columns=selection)
+
     for idx, s in enumerate(report):  
-        if search_string in s:              
-            drives.append(report[idx])
-            for i in range(28):
-                if sn in report[idx + i]:
-                    drives.append(report[idx + i])
+        if search_string in s:
+            if option < 4:
+                add_value(drives, search_string, s, driveIndex)
+            subset = selection.copy()
 
-                if health in report[idx + i]:
-                    num = ''.join(filter(str.isdigit, report[idx + i]))
-                    if num == '':
-                        num = 0
-                    num = int(num)
-                    drives.append(report[idx + i])
-                    health_pct.append(num)
+            for i in range(maxLines):
+                target_line = report[idx + i]
+                for word in subset:
+                    if word in target_line:
+                        if poh in target_line:
+                            add_value(drives, poh, target_line, driveIndex)
+                            pattern = r'\d+'
+                            match = re.findall(pattern, target_line)
+                            if pod not in drives.columns:
+                                drives = add_pod_column(drives)
+                            if match:
+                                hours = int(match[0]) * 24 + int(match[1])
+                                h = f"    Power On Hours . . . . . . . . . . . . . . . . . : {hours} hours\n"
+                                add_value(drives, pod, h, driveIndex)
+                            break
+                        else:
+                            add_value(drives, word, target_line, driveIndex)
+                            subset.remove(word)
+                            break
 
-                if sector in report[idx + i]:
-                    drives.append(report[idx + i])
+                #Search for Sectors/Errors
+                if option != 4:
+                    if (any(w in target_line for w in se) and 
+                    http not in target_line):
+                        sectorArray.append(target_line)
+                else:
+                    if any(w in target_line for w in end):
+                        drives4.append("\n")
+                        break
+                    elif i == (maxLines - 1):
+                        drives4.append("\n\n")
+                    else: 
+                        drives4.append(target_line)      
+            #End of loop that collects individual drive info
 
-                firstDrive = False
-            drives.append("\n\n")
-            #Mark split point
-            split_idx.append(len(drives))
+            #Add list of sectors to drives dataframe
+            if len(sectorArray) > 0:
+                s = " ".join(sectorArray)
+                add_value(drives, Sectors, s, driveIndex)
+            add_value(drives, nl, "\n\n", driveIndex)
 
+            sectorArray.clear()            
+            driveIndex += 1
+    #End of loop that records all drive info
+
+
+    #Replace NaN values
+    for column in drives.columns:
+        drives[column] = drives[column].fillna(f"    {column}\n")
+
+    #Convert 'drives' list into numpy array
+    dMatrix = np.array(drives)
 
     #Sort by drive health
-    dMatrix = np.array(drives)
-    dMatrix = np.split(dMatrix, split_idx, axis=0)
+    if sort:
+        if sortBy != sn:
+            drives['Sorted'] = drives[sortBy].apply(lambda x: int(re.search(r'(\d+)', x).group()) 
+                                                    if re.search(r'(\d+)', x) else float('inf'))
+        else:
+            drives['Sorted'] = drives[sortBy].apply(lambda x: re.search(r':\s*([A-Za-z0-9]+)', x).group(1) 
+                                                    if re.search(r':\s*([A-Za-z0-9]+)', x) else "")
 
-    drives_df = pd.DataFrame(dMatrix)
-    health_df = pd.DataFrame(health_pct)
-    df = pd.concat([drives_df, health_df], axis=1, join="inner")
 
-    df.columns = ['Model', 'SN', 'Health', 'Sectors', 'Blank', 'Hth']
+        #Debugging
+        pd.set_option('display.max_rows', len(drives))
+        print(drives.sort_values(by='Sorted', ascending=True))
 
-    df = df.sort_values('Hth')
+        # Sort the DataFrame by the new column, then drop the column if not needed
+        if sortBy == health:
+            sorted_df = drives.sort_values(by='Sorted', ascending=True).drop(columns=['Sorted'])
+        #elif sortBy == sn:
+        #    sorted_df = drives.sort_values("Hard Disk Serial Number", key=lambda col: col.map(nat_key), ascending=True)
+        else:
+            sorted_df = drives.sort_values(by='Sorted', ascending=True).drop(columns=['Sorted'])
+        
+        npArray = sorted_df.to_numpy()
+        #print(sorted_df)
+    else:
+        if option != 4:
+            npArray = dMatrix
 
-    print(df)
 
-    #Cleanup dataframe
-    df = df.drop(['Hth'], axis=1)
-    npArray = df.to_numpy()
+    #Cleanup sorted_df
+    if sort:
+        sorted_df.rename(columns={'  -- Physical Disk Information':'Disk #'}, inplace=True)
+        sorted_df.rename(columns={'Hard Disk Serial Number':'Serial Number'}, inplace=True)
+        sorted_df = dataframeCleanup(sorted_df)
+        sorted_df = sorted_df.drop('Newline', axis=1)
+        sorted_df = sorted_df.drop('Disk #', axis=1)
+
 
     #Check if user entered an output file name
     if len(sys.argv) > 2:
@@ -179,135 +324,36 @@ def healthSort():
     else:
         outputFile = input("Please enter new output file name: ")
 
-
-    #Write to output file
-    with open(outputFile, 'wb'):
-        npArray.tofile(outputFile, sep=' ', format='%s')
-#End of healthSort()
-
-#Option 2
-def sn_health_sector():
-    for idx, s in enumerate(report):  
-        if search_string in s:
-            drives.append(report[idx])
-            for i in range(28):
-                if sn in report[idx + i]:
-                    drives.append(report[idx + i])
-                if ltw in report[idx + i]:
-                    drives.append(report[idx + i])
-                if health in report[idx + i]:
-                    drives.append(report[idx + i])
-                if sector in report[idx + i]:
-                    drives.append(report[idx + i])
-                firstDrive = False
-            drives.append("\n\n")
-
-    #Check if user entered an output file name
-    if len(sys.argv) > 2:
-        outputFile = sys.argv[2]
+    if option != 4:
+        #Write to output file
+        summaryFile = "Summary-" + outputFile
+        with open(outputFile, 'wb'):
+            npArray.tofile(outputFile, sep=' ', format='%s')
+        if sort:
+            with open(summaryFile, 'w') as f:
+                f.write(sorted_df.to_string())
     else:
-        outputFile = input("Please enter new output file name: ")
-
-    #Write to output file
-    of = open(outputFile, 'w')
-    of.writelines(drives)
-    of.close()
-#End of sn_health_sector()
-
-#Option 3
-def simplified_full():
-    for idx, s in enumerate(report):  
-        if search_string in s:
-            drives.append(report[idx])
-            for i in range(28):
-    #           if i == 0:
-    #               if firstDrive == False:
-    #                   drives.append("\n\n\n\n")
-                if hddID in report[idx + i]:
-                    drives.append(report[idx + i])
-                if fw in report[idx + i]:
-                    drives.append(report[idx + i])
-                if sn in report[idx + i]:
-                    drives.append(report[idx + i])
-                if size in report[idx + i]:
-                    drives.append(report[idx + i])
-                if poh in report[idx + i]:
-                    drives.append(report[idx + i])
-                    pattern = r'\d+'
-                    match = re.findall(pattern, report[idx + i])
-                    if match:
-                        hours = int(match[0]) * 24 + int(match[1])
-                        drives.append(f"    Power On Hours . . . . . . . . . . . . . . . . . : {hours} hours\n")
-                if ltw in report[idx + i]:
-                    drives.append(report[idx + i])
-                if health in report[idx + i]:
-                    drives.append(report[idx + i])
-                if perf in report[idx + i]:
-                    drives.append(report[idx + i])
-                if sector in report[idx + i]:
-                    drives.append(report[idx + i])
-                #print(report[idx + i])
-                firstDrive = False
-            drives.append("\n\n")
-
-    #Check if user entered an output file name
-    if len(sys.argv) > 2:
-        outputFile = sys.argv[2]
-    else:
-        outputFile = input("Please enter new output file name: ")
-
-    #Write to output file
-    of = open(outputFile, 'w')
-    of.writelines(drives)
-    of.close()
-#End of simplified_full()
-
-#Option 4
-def full():
-    firstDrive = True
-    #Add Drive info to 'drives' list
-    for idx, s in enumerate(report):  
-        if search_string in s:
-            for i in range(28):
-                if i == 0:
-                    if firstDrive == False:
-                        drives.append("\n\n\n\n")
-                drives.append(report[idx + i])
-                #print(report[idx + i])
-                firstDrive = False
-
-    #Check if user entered an output file name
-    if len(sys.argv) > 2:
-        outputFile = sys.argv[2]
-    else:
-        outputFile = input("Please enter new output file name: ")
-
-    #Write to output file
-    of = open(outputFile, 'w')
-    of.writelines(drives)
-    of.close()
-#End of full()
+        #Write to output file
+        of = open(outputFile, 'w')
+        of.writelines(drives4)
+        of.close()
+#End of refactor()
 
 
 #Check if function was entered
 if len(sys.argv) > 3:
     functionOption = int(sys.argv[3])
 else:
+    #functionOption = 0
     printOptions()
-
-    outputPicker()
+    functionOption = outputPicker()
 #End of if-else statement
+
 
 if functionOption == 0:
     printOptions()
     outputPicker()
-elif functionOption == 1:
-    healthSort()
-elif functionOption == 2:
-    sn_health_sector()
-elif functionOption == 3:
-    simplified_full()
-elif functionOption == 4:
-    full()
+elif functionOption >= 0 and functionOption <= 4:
+    refactor(functionOption)
 else:
     print("Error. Exiting. Try running the program again.")
