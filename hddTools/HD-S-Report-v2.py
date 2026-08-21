@@ -188,9 +188,9 @@ def refactor(option):
  # - size
  # - poh 
  # - ltw
- # - search_string
+ # - fw
  # - sn
-  
+ 
     sortBy = health
 
 ### ###
@@ -208,7 +208,7 @@ def refactor(option):
         sort = True
     elif option == 2:
         selection = [sn, health, ltw]
-        sort = False
+        sort = True
     elif option == 3:
         selection = [fw, sn, size, poh, ltw, health, perf]
         sort = True
