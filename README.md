@@ -2,7 +2,6 @@
 Work Tools
 
 #### <ins>Four Folders</ins>
-#### <ins>Two folders</ins>
 
 hddTools:
 * HD-S Reports (Windows & Linux)
